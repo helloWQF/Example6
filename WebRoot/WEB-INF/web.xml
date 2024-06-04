@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+ <servlet>
+    <display-name>showStudent</display-name>
+    <servlet-name>showStudentServlet</servlet-name>
+    <servlet-class>control.ShowStudentServlet</servlet-class>
+     <multipart-config>
+       <max-file-size>20848820</max-file-size>
+       <max-request-size>418018841</max-request-size>
+       <file-size-threshold>1048576</file-size-threshold>
+     </multipart-config>
+
+  </servlet>
+  <servlet>
+    <servlet-name>ListStudentServlet</servlet-name>
+    <servlet-class>control.ListStudentServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>insertStudentservlet</servlet-name>
+    <servlet-class>control.Insertservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>deleteStudentservlet</servlet-name>
+    <servlet-class>control.Deleteservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>updateStudentservlet</servlet-name>
+    <servlet-class>control.Updateservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>doupdateStudentservlet</servlet-name>
+    <servlet-class>control.DoUpdateservlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>importStudentservlet</servlet-name>
+    <servlet-class>control.Importservlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>showStudentServlet</servlet-name>
+    <url-pattern>/showStudent.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ListStudentServlet</servlet-name>
+    <url-pattern>/ListStudentServlet.do</url-pattern>
+  </servlet-mapping>
+<servlet-mapping>
+    <servlet-name>importStudentservlet</servlet-name>
+    <url-pattern>/ImportStudentservlet.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>insertStudentservlet</servlet-name>
+    <url-pattern>/InsertStudentservlet.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>deleteStudentservlet</servlet-name>
+    <url-pattern>/DeleteStudentservlet.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>updateStudentservlet</servlet-name>
+    <url-pattern>/UpdateStudentservlet.to</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>doupdateStudentservlet</servlet-name>
+    <url-pattern>/DoUpdatStudenteservlet.do</url-pattern>
+  </servlet-mapping>
+
+</web-app>
